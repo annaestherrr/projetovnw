@@ -5,6 +5,7 @@ import styled from "styled-components";
 //Image
 import LogoVnW from "../assets/LogoVnW2.svg";
 
+//Style
 const Container = styled.div`
   width: 100%;
   display: flex;
@@ -14,11 +15,9 @@ const Container = styled.div`
 `;
 
 const ImageBox = styled.div`
-  width: 50%;
+  width: 40%;
   height: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 3rem;
 `;
 
 const LogoImage = styled.img`
@@ -59,6 +58,7 @@ const TitleBox = styled.div`
  
   }
 `;
+
 export default function About() {
   return (
     <Container id="About">
@@ -73,14 +73,14 @@ export default function About() {
           <p>
             Fundado em 2017, no Complexo do Alemão, o Vai na Web vem impactando
             e transformando a vida de jovens das classes C, D e E do Rio de
-            Janeiro e de outros 18 estados do Brasil.{" "}
+            Janeiro e de outros 18 estados do Brasil.
           </p>
           <p>
             Muito mais do que compartilhar conhecimento de programação
             front-end, o programa oferece aulas de inglês e desenvolvimento de
             habilidades humanas e socioemocionais, que preparam os futuros
             desenvolvedores para o mundo do trabalho e oferecem um espaço em que
-            é possível descobrir a riqueza de áreas que a tecnologia tem.{" "}
+            é possível descobrir a riqueza de áreas que a tecnologia tem.
           </p>
           <p>
             Com o objetivo de acentuar a potência mundial que é a juventude, o

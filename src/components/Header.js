@@ -5,6 +5,7 @@ import styled from "styled-components";
 //Image
 import LogoVnW from "../assets/LogoVnW.png";
 
+//Style
 const Container = styled.div`
   width: 100%;
   padding: 1rem;
@@ -52,7 +53,7 @@ const ListHeader = styled.ul`
 
     :hover {
       cursor: pointer;
-      border-color: #FFAC2D;
+      border-color: #ffac2d;
       transition: all 0.5s;
     }
   }
@@ -60,17 +61,27 @@ const ListHeader = styled.ul`
 
 export default function Header() {
   return (
-    <Container >
+    <Container>
       <Logo>
         <img src={LogoVnW} alt="Logo Vai na Web" />
       </Logo>
       <Nav>
         <ListHeader>
-          <li>Sobre</li>
-          <li>Formação</li>
-          <li>Equipe</li>
-          <li>Eventos</li>
-          <li>Contatos</li>
+          <a href="#About">
+            <li>Sobre</li>
+          </a>
+          <a href="#Formation">
+            <li>Formação</li>
+          </a>
+          <a href="#Team">
+            <li>Equipe</li>
+          </a>
+          <a href="#Events">
+            <li>Eventos</li>
+          </a>
+          <a href="#Contacts">
+            <li>Contatos</li>
+          </a>
         </ListHeader>
       </Nav>
     </Container>

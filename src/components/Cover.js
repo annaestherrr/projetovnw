@@ -2,12 +2,13 @@
 import React from "react";
 import styled from "styled-components";
 
-//Components
-import HeaderOk from "../components/Header.js";
+//Component
+import Header from "../components/Header.js";
 
 //Image
 import BackgroundVnW from "../assets/BackgroundVnW.png";
 
+//Style
 const Container = styled.div`
   background-image: url(${BackgroundVnW});
   width: 100%;
@@ -123,7 +124,7 @@ const PLink2 = styled.p`
 export default function Cover() {
   return (
     <Container>
-      <HeaderOk />
+      <Header />
       <Content>
         <TitleBox>
           

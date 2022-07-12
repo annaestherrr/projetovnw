@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+//Component
 import Card from "../components/Card.js";
 
 //Image
@@ -23,45 +24,55 @@ import PriscilaTufani from "../assets/PriscilaTufani-15.jpg";
 import Lupa from "../assets/Lupa.png";
 
 //Style
-
 const Container = styled.div`
-  border: yellow solid;
-  margin: 8rem;
+  margin: 9rem;
+`;
+
+const Title = styled.h1`
+  font-family: Montserrat, ExtraBold;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #0f2260;
+  margin-bottom: 2rem;
 `;
 
 const ContentCards = styled.div`
-  border: blue solid;
   display: flex;
   flex-flow: wrap;
-  justify-content: space-between;
 `;
 
-const BoxInput = styled.div`
-  width: 100%;
+const BoxInput = styled.label`
+  width: 98.7%;
   height: 5rem;
-  border: red solid;
   display: flex;
   align-items: center;
   padding-left: 8rem;
   background-color: #0f2260;
+  position: relative;
 `;
 
 const MagnifyingGlass = styled.img`
-  width: 2rem;
-  height: 2rem;
+  width: 1.8rem;
+  height: 1.8rem;
   position: absolute;
+  margin-left: 145px;
 `;
 
 const Input = styled.input`
-  border: red solid;
-  width: 10rem;
-  height: 1.5rem;
+  width: 11rem;
+  height: 1.7rem;
   color: white;
   font-size: 1rem;
   font-family: Montserrat, Medium Italic;
   background-color: transparent;
   border: white solid 1px;
+  border-radius: 3px;
   outline: none;
+  padding: 0.1rem;
+
+  ::placeholder {
+    color: white;
+  }
 `;
 
 const ListaColaboradores = [
@@ -142,7 +153,7 @@ const ListaColaboradores = [
   },
 ];
 
-export default function Cards() {
+export default function Team() {
   const [search, setSearch] = useState("");
 
   const ListaFiltrada = ListaColaboradores.filter((user) =>
@@ -150,7 +161,8 @@ export default function Cards() {
   );
 
   return (
-    <Container>
+    <Container id="Team">
+      <Title>Equipe</Title>
       <BoxInput>
         <Input
           type="text"
@@ -158,7 +170,7 @@ export default function Cards() {
           value={search}
           onChange={(event) => setSearch(event.target.value)}
         />
-        <MagnifyingGlass src={Lupa} alt="Lupa" />
+        <MagnifyingGlass src={Lupa} alt="Lupa"></MagnifyingGlass>
       </BoxInput>
       <ContentCards>
         {ListaFiltrada.map((user) => (

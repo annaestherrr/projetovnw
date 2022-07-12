@@ -6,6 +6,7 @@ import styled from "styled-components";
 import ImgFormation from "../assets/ImgFormation.png";
 import IconFormation from "../assets/IconFormation.png";
 
+//Style
 const Container = styled.div`
   width: 100%;
   display: flex;
@@ -25,7 +26,7 @@ const Title = styled.h1`
   font-size: 2rem;
   font-weight: 900;
   color: #0f2260;
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
 `;
 
 const BoxContent1 = styled.div`
